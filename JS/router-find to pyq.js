@@ -9,5 +9,13 @@ $(function () {
         $("#menu").load("page/menu/menu-pyq.html")
 
     })
+    $("#robot").click(function () {
+
+        $("#dynamic").load($(this).data("page"))
+
+        $("#title").load("page/title/title-robot.html")
+        $("#menu").load("page/menu/menu-robot.html")
+
+    })
 
 })

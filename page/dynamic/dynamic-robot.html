@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="CSS/dynamic.css">
+<script src="JS/router-pyq to find.js"></script>
+<script>
+    $(function(){
+        var key = "0d8a6f9890f04a75951d62142dc92a5c";
+        var url = "http://www.tuling123.com/openapi/api";
+        $('#entry2-1').click(function() {
+
+
+            var info = {
+                "key": key,
+                "info": $("#entry1-1").val()
+
+            }
+            var self = $("<div class='line'>" + "<div class='MyHead ' style='background-image: url(img/头像/猫.jpeg)'></div>" + "<div class='MyDialog'>" + $("#entry1-1").val() + "</div></div><br>")
+            $(".content").append(self)
+            $.ajax({
+                type: "POST",
+                url: url,
+                data: info,
+                dataType: "json",
+                success: function (result) {
+                    var robot = $("<div class='line'>" + "<div class='head' style='background-image: url(img/头像/小妹.jpg)'></div>" + "<div class='dialog'>" + result.text + "</div></div><br>")
+                    $(".content").append(robot)
+                }
+
+            });
+        })
+    })
+
+</script>
+
+<div class="frame">
+    <div class="content">
+    </div>
+</div>

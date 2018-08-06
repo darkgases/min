@@ -27,3 +27,29 @@
     justify-content: center;
     display: flex;
 }
+
+
+
+#entry1{
+    height: 45px;
+    line-height: 40px;
+    flex: 1;
+    margin-left: 20px;
+    margin-top: 10px;
+
+}
+#entry1 input{
+    width: 95%;
+
+}
+#entry2{
+    height: 40px;
+    line-height: 40px;
+    width: 80px;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+#entry2 input{
+    width: 70%;
+
+}
