@@ -31,25 +31,49 @@
 
 
 #entry1{
-    height: 45px;
+    height: 40px;
     line-height: 40px;
     flex: 1;
-    margin-left: 5%;
+
     margin-top: 10px;
 
 }
 #entry1 input{
     width: 95%;
+    height: 30px;
+    font-size: 18px;
 
 }
 #entry2{
     height: 40px;
     line-height: 40px;
-    width: 80px;
+    width: 60px;
     margin-right: 5%;
     margin-top: 10px;
 }
 #entry2 input{
     width: 70%;
+    height: 30px;
+
+}
+
+.menu1{
+    height:40px ;
+    width: 40px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../img/svg/语音.svg");
+    margin-left: 5%;
+    margin-top: 10px;
+
+}
+.menu2{
+    height:40px ;
+    width: 40px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../img/svg/表情(1).svg");
+
+    margin-top: 10px;
 
 }
